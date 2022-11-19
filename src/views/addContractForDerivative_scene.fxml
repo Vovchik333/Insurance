@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AddContractForDerivativeController">
+    <children>
+        <Label layoutX="320.0" layoutY="334.0" prefHeight="33.0" prefWidth="151.0" text="Output information:" wrapText="true" />
+        <Button fx:id="buttonActivate" layoutX="88.0" layoutY="373.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="171.0" text="Add contracts">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font></Button>
+        <Label layoutX="433.0" layoutY="22.0" prefHeight="17.0" prefWidth="143.0" text="Select derivative:" />
+        <TextArea fx:id="outputText" layoutX="320.0" layoutY="361.0" prefHeight="63.0" prefWidth="208.0" text="&#10;&#10;&#10;" />
+        <Label layoutX="14.0" layoutY="22.0" prefHeight="17.0" prefWidth="160.0" text="Type surname:" />
+        <TextField fx:id="surname_client" layoutX="14.0" layoutY="47.0" />
+        <Label layoutX="14.0" layoutY="87.0" prefHeight="17.0" prefWidth="160.0" text="Type first name:" />
+        <TextField fx:id="first_name_client" layoutX="14.0" layoutY="110.0" />
+        <Label layoutX="14.0" layoutY="150.0" prefHeight="17.0" prefWidth="160.0" text="Type middle name:" />
+        <TextField fx:id="mid_name_client" layoutX="14.0" layoutY="172.0" />
+        <Label layoutX="14.0" layoutY="209.0" prefHeight="17.0" prefWidth="160.0" text="Type address:" />
+        <TextField fx:id="address_client" layoutX="14.0" layoutY="232.0" />
+        <Label layoutX="14.0" layoutY="276.0" prefHeight="17.0" prefWidth="160.0" text="Type passport id:" />
+        <TextField fx:id="password_id" layoutX="14.0" layoutY="299.0" />
+        <Label layoutX="225.0" layoutY="22.0" prefHeight="17.0" prefWidth="160.0" text="Type validity:" />
+        <TextField fx:id="validity" layoutX="225.0" layoutY="47.0" />
+        <Label layoutX="225.0" layoutY="87.0" prefHeight="17.0" prefWidth="160.0" text="Type insure event:" />
+        <TextField fx:id="insure_event" layoutX="225.0" layoutY="110.0" />
+        <Label layoutX="225.0" layoutY="150.0" prefHeight="17.0" prefWidth="160.0" text="Type insure object:" />
+        <TextField fx:id="insure_object" layoutX="225.0" layoutY="172.0" />
+        <Label layoutX="225.0" layoutY="209.0" prefHeight="17.0" prefWidth="160.0" text="Type payment amount:" />
+        <TextField fx:id="payment_amount" layoutX="225.0" layoutY="232.0" />
+        <Label layoutX="433.0" layoutY="159.0" prefHeight="17.0" prefWidth="160.0" text="Select type of insurance:" />
+        <TextField fx:id="risk_lvl" layoutX="225.0" layoutY="299.0" />
+        <ListView fx:id="listTypes" layoutX="433.0" layoutY="185.0" onMouseClicked="#clickMouseType" prefHeight="94.0" prefWidth="143.0" />
+        <Label layoutX="225.0" layoutY="276.0" prefHeight="17.0" prefWidth="160.0" text="Type risk level:" />
+      <ListView fx:id="listDerivatives" layoutX="433.0" layoutY="48.0" onMouseClicked="#clickMouseDerivative" prefHeight="94.0" prefWidth="143.0" />
+    </children>
+</AnchorPane>

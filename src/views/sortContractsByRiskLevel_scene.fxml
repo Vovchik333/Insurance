@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SortContractsByRiskLevel_scene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="326.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SortContractsByRiskLevelController">
+    <children>
+        <Label layoutX="14.0" layoutY="17.0" prefHeight="94.0" prefWidth="151.0" text="Click on a derivative to see a sorted list in descending order of risk:" wrapText="true">
+            <font>
+                <Font size="17.0" />
+            </font></Label>
+        <ListView fx:id="listInformation" layoutX="185.0" layoutY="50.0" prefHeight="263.0" prefWidth="262.0" />
+        <Label layoutX="185.0" layoutY="14.0" prefHeight="33.0" prefWidth="151.0" text="Output information:" wrapText="true" />
+        <ListView fx:id="listDerivatives" layoutX="14.0" layoutY="131.0" onMouseClicked="#clickMouse" prefHeight="127.0" prefWidth="143.0" />
+    </children>
+</AnchorPane>

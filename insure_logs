@@ -1,0 +1,22 @@
+лист. 19, 2022 11:08:26 PM loggers.InsureLog configureLogger
+INFO: logger successfully configured.
+лист. 19, 2022 11:08:26 PM main.Main main
+INFO: The main class has started work.
+лист. 19, 2022 11:08:28 PM work_with_DB.ConnectorDB setConnection
+INFO: The connection to the database was successful.
+лист. 19, 2022 11:08:31 PM work_with_DB.ConnectorDB showID
+INFO: all id successfully showed.
+лист. 19, 2022 11:08:31 PM menu.ShowContracts execute
+INFO: The window "show contracts" successfully created.
+лист. 19, 2022 11:08:33 PM work_with_DB.ConnectorDB setSelect
+INFO: all value successfully set for Obligations.
+лист. 19, 2022 11:08:33 PM work_with_DB.ConnectorDB showTable
+INFO: the table successfully showed.
+лист. 19, 2022 11:08:33 PM controllers.ShowContractsController clickMouse
+INFO: contracts are successfully displayed
+лист. 19, 2022 11:08:33 PM work_with_DB.ConnectorDB setSelect
+INFO: all value successfully set for Obligations.
+лист. 19, 2022 11:08:33 PM work_with_DB.ConnectorDB showTable
+INFO: the table successfully showed.
+лист. 19, 2022 11:08:33 PM controllers.ShowContractsController clickMouse
+INFO: contracts are successfully displayed
