@@ -55,10 +55,10 @@ public class DeleteContractController {
                 choice = 1;
             else
                 choice = 2;
-        double reserve = ConnectorDB.getValueDouble("SELECT Insure_Reserve FROM FinancialPosition " +
+            double reserve = ConnectorDB.getValueDouble("SELECT Insure_Reserve FROM FinancialPosition " +
                 "ORDER BY ID DESC LIMIT 1", "Insure_Reserve");
-        double x = ConnectorDB.changeFinancePosition(id, choice);
-        ConnectorDB.updateTable("INSERT INTO FinancialPosition(Insure_Reserve, ModifiedDate) " +
+            double x = ConnectorDB.changeFinancePosition(id, choice);
+            ConnectorDB.updateTable("INSERT INTO FinancialPosition(Insure_Reserve, ModifiedDate) " +
                     "VALUES (" + reserve + " + " + x + ", CURRENT_DATE())");
             Derivative.difContract(ConnectorDB.getValueInt(
                     "SELECT derivative_id FROM Obligations WHERE contract_id = " + id, "derivative_id"));
@@ -73,8 +73,6 @@ public class DeleteContractController {
             alert.showAndWait();
         }
     }
-
-
 }
 
 

@@ -85,10 +85,11 @@ public class ConnectorDB {
         StringBuilder result = new StringBuilder();
         try {
             while (resultSet.next()) {
-                result.append(String.format("%3d|", resultSet.getInt("ID")));
-                result.append(String.format("%15.2f|", resultSet.getDouble("Insure_Reserve")));
-                result.append(String.format("%12s|\n", resultSet.getString("ModifiedDate")));
+                result.append(String.format("%3d |", resultSet.getInt("ID")));
+                result.append(String.format("%15.2f |", resultSet.getDouble("Insure_Reserve")));
+                result.append(String.format("%12s |\n", resultSet.getString("ModifiedDate")));
                 list.add(result.toString());
+                result.delete(0, result.length());
             }
             Logger.getGlobal().info("all value successfully set for FinancePosition.");
         }catch (SQLException e){
