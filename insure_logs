@@ -1,22 +1,14 @@
-лист. 19, 2022 11:08:26 PM loggers.InsureLog configureLogger
+лист. 20, 2022 3:42:31 AM loggers.InsureLog configureLogger
 INFO: logger successfully configured.
-лист. 19, 2022 11:08:26 PM main.Main main
+лист. 20, 2022 3:42:31 AM main.Main main
 INFO: The main class has started work.
-лист. 19, 2022 11:08:28 PM work_with_DB.ConnectorDB setConnection
+лист. 20, 2022 3:42:33 AM work_with_DB.ConnectorDB setConnection
 INFO: The connection to the database was successful.
-лист. 19, 2022 11:08:31 PM work_with_DB.ConnectorDB showID
-INFO: all id successfully showed.
-лист. 19, 2022 11:08:31 PM menu.ShowContracts execute
-INFO: The window "show contracts" successfully created.
-лист. 19, 2022 11:08:33 PM work_with_DB.ConnectorDB setSelect
-INFO: all value successfully set for Obligations.
-лист. 19, 2022 11:08:33 PM work_with_DB.ConnectorDB showTable
-INFO: the table successfully showed.
-лист. 19, 2022 11:08:33 PM controllers.ShowContractsController clickMouse
-INFO: contracts are successfully displayed
-лист. 19, 2022 11:08:33 PM work_with_DB.ConnectorDB setSelect
-INFO: all value successfully set for Obligations.
-лист. 19, 2022 11:08:33 PM work_with_DB.ConnectorDB showTable
-INFO: the table successfully showed.
-лист. 19, 2022 11:08:33 PM controllers.ShowContractsController clickMouse
-INFO: contracts are successfully displayed
+лист. 20, 2022 3:42:38 AM menu.DeleteContract execute
+INFO: The window "delete contract" successfully created.
+лист. 20, 2022 3:42:40 AM controllers.DeleteContractController deleteContract
+WARNING: an error in the input data.
+лист. 20, 2022 3:42:45 AM work_with_DB.ConnectorDB getValueInt
+SEVERE: Illegal operation on empty result set.
+лист. 20, 2022 3:42:56 AM loggers.InsureLog sendMail
+WARNING: Failed to send email.
